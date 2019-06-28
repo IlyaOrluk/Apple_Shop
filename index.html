@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300|Open+Sans+Condensed:300|Roboto|Source+Sans+Pro:200&display=swap" rel="stylesheet">
+    <title>Iphone Sale</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="container">
+                
+                <ul class='nav-menu'>
+                    <img src="./icon.png" class="icon-nav-bar">
+                    <li><a class='nav-menu-item' href="#catalog">Catalog</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+        </div>
+    </div>
+    <section class='first'>
+        <div class="container">
+            <div class="iphones-preview">
+                <a class="iphones-preview-item" href='#catalog'>
+                        <img src='./iphone6s.png'>
+                        <span>iPhone 6s</span>
+                        <span>от 13 990 руб.</span>
+                </a>
+                <a class="iphones-preview-item" href='#catalog'>
+                        <img src='./iphone7.png'>
+                        <span>iPhone 7</span>
+                        <span>от 17 990 руб.</span>
+                </a>
+                <a class="iphones-preview-item" href='#catalog'>
+                        <img src='./iphone8.png'>
+                        <span>iPhone 8</span>
+                        <span>от 28990 руб.</span>
+                </a>
+
+
+            </div>
+            <h1 class='title'>Купите Apple iPhone<br> со скидкой<br> до 12000 рублей.</h1>
+        </div> 
+        <div class="iphone">
+            <canvas id='canvas'></canvas>
+            <div class='screen'>
+                    <span class="screen-signal"><i class="fas fa-signal"></i></span>
+                    <span class="screen-batery"><i class="fas fa-battery-empty"></i></span>
+                    <span class="screen-lock"><i class="fas fa-lock"></i></span>
+                    <span class="screen-time">14:51</span>
+                    <span class='screen-data'>Thursday, June 27</span>
+                    <div class="screen-lock-line"></div>
+            </div>
+            <img src="./IPhone.png" class="title-iphone">
+        </div>
+    </section>
+
+    <section class='second' id='catalog'>
+        <div class="container">
+                <h1 class='catalog-title'>Choose your iPhone.</h1>
+                <div class="catalog-title-underline"></div>
+                <div class="product-view">
+                        <i class="fas fa-arrow-circle-left slider-iphone-left"></i>
+                        <div class='slider-iphone'>
+                            <div class="slider-iphone-item">
+                                    <img src="./iphone8.png" class="img-iphone">
+                            </div>
+                            <div class="slider-iphone-item">
+                                    <img src="./iphone7.png" class="img-iphone">
+                            </div>
+                            <div class="slider-iphone-item">       
+                                <img src="./iphone6s.png" class="img-iphone"> 
+                            </div>
+                        </div>
+                        <i class="fas fa-arrow-circle-right slider-iphone-right"></i>  
+
+                            <div class="iphone-info">
+                                    <h2 class='iphone-name'>Купить iPhone 8</h2>
+                                    <span class='view-price'>От 52 871 pyб.</span>
+                                    <div class="choise-title-underline"></div>
+                                    <h4>Выберите модель:</h4>
+                                    <div class="choise-model">
+                                        <div class="model">
+                                                <span>iPhone 8</span>
+                                                <span>Дисплей 4,7 дюйма</span>
+                                        </div>
+                                        <span>От 52 871 pyб.</span>
+                                    </div>
+                                    <div class="choise-model">
+                                            <div class="model">
+                                                    <span>iPhone 8 Plus</span>
+                                                    <span>Дисплей 5,5 дюйма</span> 
+                                            </div> 
+                                            <span>От 61 007 pyб.</span>
+                                    </div>
+                                    <div class="choise-title-underline"></div>
+                                    <h4>Выберите цвет:</h4>
+                                    <div class="choise-color-box">
+                                            <div class="choise-color">
+                                                <div class="color-silver"></div>
+                                                <span>Cеребристый</span>
+                                            </div>
+                                            <div class="choise-color">
+                                                <div class="color-black"></div>
+                                                <span>"Серый космос"</span>
+                                            </div>
+                                            <div class="choise-color">
+                                                <div class="color-gold"></div>
+                                                <span>Золотой</span>
+                                            </div>
+                                    </div>
+                                    <div class="choise-title-underline"></div>
+                                    <h4>Выберите емкость:</h4>
+                                    <div class="choise-memory-box">
+                                            <div class="choise-memory">
+                                                <span>64gb</span>
+                                            </div>
+                                            <div class="choise-memory">
+                                                <span>128gb</span>
+                                            </div>
+                                            <div class="choise-memory">
+                                                <span>256gb</span>
+                                            </div>
+                                    </div>
+                                    <div class="more-button">Оформить заказ</div>
+
+                        </div>
+                </div>
+        </div>
+        
+      
+        
+            
+    </section>
+    
+    <script src="https://kit.fontawesome.com/a69351f995.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
