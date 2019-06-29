@@ -61,7 +61,7 @@ li a:hover {
     background: rgba(255, 255, 255, 0.074);
 }
 .title {
-    margin-top: 39vh; 
+    margin-top: 45vh; 
     font-size: 55px;
     color: rgb(26, 22, 18);
 }
@@ -157,39 +157,49 @@ canvas {
     box-shadow: inset 0px 21px 35px -19px rgba(0,0,0,1);
 }
 
-/*--Slider-->*/
-.img-iphone{
-    box-sizing: border-box;
-    max-height: 380px;
-}
+/*--Slider iPhone-->*/
 .slider-iphone{
-    border: 2px solid black;
     display: flex;
     align-items: center;
+    height: 80%;
+}
+.img-iphone{
+    box-sizing: border-box;
+    height: 360px;
+}
+.slider-iphone-preview{
+    /* border: 2px solid black; */
     overflow: hidden;
-    max-width: 375px;
+    width: 378px;
     max-height: 400px;
     box-sizing: border-box;
-    margin: 15vh 0;
+    margin: 20vh 0;
+    display: inline-block;
 
 }
 .slider-iphone-item{
     /* border: 1px solid red; */
-    margin: 0 25px;
-    width: 100%;
+    height: 400px;
+    width: 378px;
     transition: .5s;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+.slider-iphone-left, .slider-iphone-right{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.568);
+    transition: .3s;
+}
+.slider-iphone-left:active, .slider-iphone-right:active{
+    color: white;
+}
+
 .slider-iphone-left{
     font-size: 30px;
-    margin: 33vh 0;
-    cursor: pointer;
 }
 .slider-iphone-right{
     font-size: 30px;
-    margin: 33vh 0;
-    cursor: pointer;
 }
 /*--Slider-end|->*/
 
@@ -206,6 +216,16 @@ canvas {
     border-radius: 30px;
     margin: 2vh 0;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
 
 .iphone-info{
     /* border: 1px solid rgba(255, 255, 255, 0.568); */
@@ -217,6 +237,7 @@ canvas {
     width: 46%;
     padding: 3vh;
     margin: 4vh 2vh;
+    animation: fadeIn .4s ease-in;
 
 }
 .iphone-name {
@@ -257,9 +278,9 @@ canvas {
 .choise-model span:nth-child(1){
     font-size: 20px;
 }
-.choise-model span:nth-child(2){
+/* .choise-model span:nth-child(2){
 
-}
+} */
 .choise-model span:nth-child(3){
     text-align: right;
     font-size: 12px;
